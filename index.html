@@ -34,7 +34,7 @@
             <div class="card-body">
                 <p class="card-text">Who's gonna make coffee today?</p>
                 <form class="d-flex" id="form">
-                    <input type="number" id="max" class="form-control mr-2" placeholder="Set max value">
+                    <input type="number" id="max" class="form-control mr-2" placeholder="Set max" autocomplete="off">
                     <button type="submit" class="btn btn-primary">Generate</button>
                 </form>
             </div>
@@ -66,7 +66,7 @@
         })
 
         function getRandomNum(max) {
-            return Math.floor(Math.random() * (max - 1) + 1);
+            return Math.floor(Math.random() * max + 1)
         }
     </script>
 </body>
